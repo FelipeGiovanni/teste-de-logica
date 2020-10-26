@@ -2,11 +2,10 @@
 const friends = 5;
 
 const combinations = (qty) => {
-  //check for options
-  if(qty > 1) {
-    if(qty > 2) qty*= qty--
+  //calc
+    if(qty > 2) qty*= qty - 1
   
     return qty
-  }
 }
+//result
 console.log(combinations(friends))

@@ -16,8 +16,8 @@ for (let i in array) {
     }
 
     if(order === true) {
-        console.log(value + " -> Está ordenado");
+        console.log(`${value} -> Está ordenado`);
     } else {
-        console.log(value + " -> Não está ordenado");
+        console.log(`${value} -> Não está ordenado`);
     }
 }
