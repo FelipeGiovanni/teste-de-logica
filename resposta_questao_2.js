@@ -1,8 +1,6 @@
 const getAllDuplicates = (num) => {
     //sorting values
-    let sortArray = num.sort(function(a, b) {
-        return a - b;
-    });
+    let sortArray = num.sort((a, b) => a - b);
     //filtering equal values
     return sortArray.filter((item, index) => sortArray.indexOf(item) != index);
 }
