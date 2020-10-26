@@ -1,9 +1,14 @@
-const array = ["1,2,3,4,4,5"];
+//input
+const array = ["1,2,3,4,4,5", "5,4,2", "1,3,5,7,8,8,10"];
 
 for (let i in array) {
-    let value = array[i].split(',');
+    //split array
+    let value = array[i].split(',').map(Number)
+    //initial value
     let order = true;
+    //checking if next value is 
     for(let j = 0 ; j < value.length - 1 ; j++){
+        // checking if the next value is greater
         if(value[j] > value[j+1]) {
             order = false;
             break;
